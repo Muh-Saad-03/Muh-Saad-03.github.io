@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Saad - Dark Resume with Purple Accent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #1a1a1a; 
+      color: #e0e0e0;
+      position: relative;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    section {
+      padding: 70px 0;
+    }
+    h2 {
+      border-bottom: 3px solid #9b59b6;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      color: #9b59b6;
+      font-weight: 700;
+    }
+    hr {
+      border-top: 1.5px solid #444;
+    }
+    nav.navbar {
+      background: rgba(26, 26, 26, 0.95);
+      box-shadow: 0 2px 8px rgba(155, 89, 182, 0.3);
+    }
+    nav .navbar-brand {
+      color: #9b59b6 !important;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      font-size: 1.4rem;
+    }
+    nav .nav-link {
+      color: #bbb !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav .nav-link:hover,
+    nav .nav-link.active {
+      color: #9b59b6 !important;
+      font-weight: 700;
+      text-shadow: 0 0 8px #9b59b6;
+    }
+    .container.bg-white {
+      background: #222222 !important;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(155, 89, 182, 0.15);
+      color: #ddd !important;
+    }
+    #experience > div, #education > div {
+      margin-bottom: 2rem;
+    }
+    h5 {
+      color: #9b59b6;
+      font-weight: 600;
+    }
+    p.fst-italic {
+      color: #777;
+      font-style: italic;
+    }
+    ul li {
+      margin-bottom: 8px;
+      line-height: 1.4;
+      color: #ccc;
+    }
+    .badge {
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .badge.bg-primary {
+      background-color: #9b59b6 !important; 
+      color: #fff;
+    }
+    .badge.bg-success {
+      background-color: #6a42a0 !important;
+      color: #fff;
+    }
+    .badge.bg-info {
+      background-color: #9b59b6 !important;
+      color: #fff;
+    }
+    .badge:hover {
+      filter: brightness(1.1);
+    }
+    .carousel-item .card {
+      background: #2b2b2b;
+      color: #eee;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(155, 89, 182, 0.4);
+    }
+    .carousel-item .card-title {
+      color: #9b59b6;
+      font-weight: 700;
+    }
+    .carousel-item .card-text {
+      color: #bbb;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: drop-shadow(0 0 6px #a208df);
+    }
+    #contact a {
+      color: #9b59b6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+      color: #b27fe4;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarResume" data-bs-offset="80" tabindex="0">
+
+  <nav id="navbarResume" class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Muhammad Saad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item"><a class="nav-link active" href="#summary">Summary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="summary" class="container">
+    <h2>Summary</h2>
+    <p>
+      Aspiring Computer Science graduate with strong skills in Java, JavaScript, and Python. Experienced in software development, robotics, and problem solving.
+      Detail-oriented and committed to delivering efficient and reliable code. Looking forward to opportunities to grow and contribute in software development roles.
+    </p>
+  </section>
+
+  <section id="education" class="container bg-white">
+    <h2>Education</h2>
+    <div>
+      <h5>Brooklyn College</h5>
+      <p><em>Expected Graduation:</em> May 2025</p>
+      <p><strong>Bachelor of Science in Computer Science</strong></p>
+      <ul>
+        <li>Relevant Coursework: Discrete Structures, Data Structures, Data Sciences, Computer Architecture, C++</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="container mb-5">
+    <h2>Professional Experience</h2>
+
+    <div>
+      <h5>Cashier — Burger King</h5>
+      <p class="fst-italic text-muted">Brooklyn, NY | Sep 2018 – July 2024</p>
+      <ul>
+        <li>Efficiently addressed guest concerns and complaints with empathy and professionalism.</li>
+        <li>Fostered loyal clientele through courteous and pleasant customer interactions.</li>
+        <li>Prepared food orders within a 2-3 minute timeframe adhering to safety standards.</li>
+        <li>Coordinated scheduling and cross-trained with team members to ensure seamless service.</li>
+        <li>Strictly adhered to cash handling, security, inventory, and labor policies.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Service Associate — Rite Aid</h5>
+      <p class="fst-italic text-muted">Brooklyn, NY | July 2022 – March 2023</p>
+      <ul>
+        <li>Provided excellent customer service assisting with shopping needs and inquiries.</li>
+        <li>Maintained store cleanliness and organization, stocked shelves, and built displays.</li>
+        <li>Completed inventory counts and supported price markdowns and promotions.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="container bg-white mb-5">
+    <h2>Technical Skills</h2>
+    <div class="mb-3">
+      <h6>Programming Languages:</h6>
+      <span class="badge bg-primary me-2">Java</span>
+      <span class="badge bg-primary me-2">JavaScript</span>
+      <span class="badge bg-primary me-2">Python</span>
+    </div>
+    <div class="mb-3">
+      <h6>Applications:</h6>
+      <span class="badge bg-success me-2">Eclipse</span>
+      <span class="badge bg-success me-2">PowerShell</span>
+      <span class="badge bg-success me-2">Microsoft Excel (Pivot Tables)</span>
+      <span class="badge bg-success me-2">Google Sheets</span>
+      <span class="badge bg-success me-2">CLion</span>
+      <span class="badge bg-success me-2">IntelliJ</span>
+    </div>
+    <div>
+      <h6>Technical Knowledge:</h6>
+      <span class="badge bg-info me-2">Operating Systems (Windows, MacOS)</span>
+    </div>
+  </section>
+
+  <section id="projects" class="container mb-5">
+    <h2>Projects Portfolio</h2>
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <h5 class="card-title">Custom-built PC</h5>
+              <p class="card-text">Constructed a custom-built PC from scratch, demonstrating hardware and software proficiency.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <h5 class="card-title">LeetCode Problem Solving</h5>
+              <p class="card-text">Enhanced coding skills by solving complex algorithm and data structure problems on LeetCode.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <h5 class="card-title">Java Bank Account App</h5>
+              <p class="card-text">Developed a Java application enabling user login, account creation, and fund transfers between accounts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <h5 class="card-title">EV3 Robot Programming</h5>
+              <p class="card-text">Designed and programmed an EV3 robot, showcasing robotics and coding expertise.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="
