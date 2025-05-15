@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #2e3b2e;
+  color: #4CAF50;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+}
+
+.controls {
+  background: linear-gradient(135deg, rgba(34, 43, 39, 0.9), rgba(74, 94, 86, 0.9));
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  margin-right: 30px;
+  max-width: 350px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.controls h2 {
+  text-align: center;
+  color: #8B4513;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section p {
+  font-weight: 600;
+  color: #ccc;
+}
+
+input[type="range"] {
+  width: 100%;
+  appearance: none;
+  background: #444;
+  height: 8px;
+  border-radius: 10px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]:hover {
+  background: #777;
+}
+
+input[type="checkbox"], button {
+  accent-color: #8B4513;
+}
+
+button {
+  background-color: #3e4b3c;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8B4513;
+  color: #111;
+}
+
+canvas {
+  border: 2px solid #fff;
+  background-color: #333;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#sceneCanvas {
+  max-width: 800px;
+  max-height: 600px;
+  transition: transform 0.3s ease;
+}
+
+#sceneCanvas:hover {
+  transform: scale(1.05);
+}
