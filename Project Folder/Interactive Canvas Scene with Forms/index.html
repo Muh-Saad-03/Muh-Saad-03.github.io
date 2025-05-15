@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forest Interactive Scene</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="controls">
+    <h2>Forest Scene Controls</h2>
+
+    <div class="form-section">
+      <p>Select Forest Background:</p>
+      <label><input type="radio" name="bg" value="forest1.jpg" checked /> Forest Clearing</label>
+      <label><input type="radio" name="bg" value="forest2.jpg" /> Moonlit Grove</label>
+      <label><input type="radio" name="bg" value="cabin.jpg" /> Forest Cabin</label>
+    </div>    
+
+    <div class="form-section">
+      <p>Forest Creature Y Position:</p>
+      <input type="range" id="sliderY" min="100" max="300" value="200" />
+    </div>
+
+    <div class="form-section">
+      <p>Forest Creature X Position:</p>
+      <input type="range" id="sliderX" min="100" max="500" value="250" />
+    </div>
+
+    <div class="form-section">
+      <p>Show Items:</p>
+      <label><input type="checkbox" id="item1" /> Firewood</label>
+      <label><input type="checkbox" id="item2" /> Forest Lantern</label>
+      <label><input type="checkbox" id="item3" /> Treehouse</label>
+    </div>
+
+    <div class="form-section">
+      <p>Sound Effects:</p>
+      <button onclick="playSound(0)">Forest Breeze</button>
+      <button onclick="playSound(1)">Wildlife Call</button>
+      <button onclick="playSound(2)">Campfire Crackle</button>
+    </div>
+  </div>
+
+  <canvas id="sceneCanvas" width="600" height="400"></canvas>
+
+  <script src="codeworker.js"></script>
+</body>
+</html>

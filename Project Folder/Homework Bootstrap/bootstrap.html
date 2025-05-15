@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elegant Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      font-weight: 700;
+      color: #33475b;
+      letter-spacing: 1.5px;
+    }
+    .card-grid {
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      padding: 2rem 1rem;
+      transition: transform 0.3s ease;
+      user-select: none;
+    }
+    .card-grid:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgb(0 0 0 / 0.2);
+    }
+    .bg-pink {
+      background: linear-gradient(135deg, #f43b47 0%, #453a94 100%);
+    }
+    .bg-purple {
+      background: linear-gradient(135deg, #7f00ff 0%, #e100ff 100%);
+    }
+    .bg-cyan {
+      background: linear-gradient(135deg, #00f260 0%, #0575e6 100%);
+    }
+    .bg-gold {
+      background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="mb-5 text-center">Bootstrap Testing Homework Grid</h1>
+
+    <div class="row mb-4">
+      <div class="col card-grid bg-pink">Column 1 (col)</div>
+      <div class="col card-grid bg-purple">Column 2 (col)</div>
+      <div class="col card-grid bg-cyan">Column 3 (col)</div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-4 card-grid bg-gold">col-4</div>
+      <div class="col-8 card-grid bg-purple">col-8</div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-3 card-grid bg-cyan">col-3</div>
+      <div class="col-6 card-grid bg-pink">col-6</div>
+      <div class="col-3 card-grid bg-gold">col-3</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-grid bg-purple">Responsive 1</div>
+      <div class="col-sm-12 col-md-6 col-lg-4 card-grid bg-cyan">Responsive 2</div>
+      <div class="col-sm-12 col-md-12 col-lg-4 card-grid bg-pink">Responsive 3</div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
