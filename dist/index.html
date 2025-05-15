@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airplanes.</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#131C2A">
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/icon-512.png">
+</head>
+<body>
+  <div class="content">
+    <div class="loading">Loading</div>
+    <div class="trigger"></div>
+    <div class="section">
+      <h1>Airplanes.</h1>
+      <h3>Understanding how flight really works.</h3>
+      <p>Learn how airplanes fly — and why they’re one of the safest ways to travel.</p>
+      <div class="scroll-cta">Scroll</div>
+    </div>
+
+    <div class="section right">
+      <h2>They’re not just big buses with wings.</h2>
+    </div>
+
+    <div class="ground-container">
+      <div class="parallax ground"></div>
+
+      <div class="section desert">
+        <h2>Once in the air, they glide through carefully controlled skies.</h2>
+        <p>Commercial flight paths are monitored 24/7 for safety and efficiency.</p>
+      </div>
+      <div class="section right desert">
+        <h2>Flight is made possible by science and years of innovation.</h2>
+        <p>Redundancy, training, and maintenance make flight incredibly reliable.</p>
+      </div>
+
+      <div class="section right">
+        <h2>They lift off with powerful engines and precise design.</h2>
+        <p>Every takeoff is carefully calculated by both pilots and systems.</p>
+      </div>
+      <div class="section">
+        <h2>Once in the air, they glide through carefully controlled skies.</h2>
+        <p>Commercial flight paths are monitored 24/7 for safety and efficiency.</p>
+      </div>
+      <div class="section right">
+        <h2>Flight is made possible by science and years of innovation.</h2>
+        <p>Redundancy, training, and maintenance make flight incredibly reliable.</p>
+      </div>
+      <div class="parallax clouds"></div>
+    </div>
+
+    <div class="blueprint">
+      <svg width="100%" height="100%" viewBox="0 0 100 100">
+        <line id="line-length" x1="10" y1="80" x2="90" y2="80" stroke-width="0.5"></line>
+        <path id="line-wingspan" d="M10 50, L40 35, M60 35 L90 50" stroke-width="0.5"></path>
+        <circle id="circle-phalange" cx="60" cy="60" r="15" fill="transparent" stroke-width="0.5"></circle>
+      </svg>
+    
+      <div class="section dark">
+        <h2>The facts and figures.</h2>
+        <p>Let’s explore how airplane design keeps you safe and flying efficiently.</p>
+      </div>
+    
+      <div class="section dark length">
+        <h2>Length.</h2>
+        <p>Passenger jets typically range from 30 to over 70 meters long. This space isn't just for passengers — it houses avionics, cargo holds, and fuel systems.</p>
+        <p>Interestingly, fuel is stored in the wings, which helps balance weight and improve aerodynamics. The wings also generate lift — the upward force that keeps the plane in the air — using their specially curved shape called an airfoil.</p>
+      </div>
+    
+      <div class="section dark wingspan">
+        <h2>Wing Span.</h2>
+        <p>Wings can span over 60 meters on large jets, and they're built to be incredibly flexible. This flexibility helps absorb turbulence and reduce stress on the aircraft body.</p>
+        <p>Despite looking thin, wings are engineered with materials like carbon fiber and titanium and are tested to withstand forces far beyond normal flight. They're nearly impossible to break off under any real-world conditions.</p>
+      </div>
+    
+      <div class="section dark phalange">
+        <h2>Stabilizers</h2>
+        <p>The horizontal and vertical stabilizers at the tail end control pitch and yaw, helping keep the plane stable and level throughout the flight. They’re critical to balance and control.</p>
+      </div>
+    
+      <div class="section dark">
+        <h2>Engines</h2>
+        <p>Jet engines are among the most reliable machines ever built. Commercial airliners are designed to fly safely even if one engine stops working — and pilots are trained regularly for these situations.</p>
+        <p>Most airplanes are also equipped with an APU (Auxiliary Power Unit), which provides backup power on the ground and in emergencies. Redundant systems ensure that even if one system fails, others take over seamlessly.</p>
+        <p>Modern engines are constantly monitored by onboard computers, and every plane goes through rigorous checks before takeoff. Engine failures are extremely rare — and almost never life-threatening.</p>
+      </div>
+    </div>
+    
+
+    <div class="sunset">
+      <div class="section"></div>
+      <div class="section end">
+        <h2>Until Next Time. See you aboard!</h2>
+        <ul class="credits"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src='https://unpkg.com/three@0.117.1/build/three.min.js'></script>
+  <script src='https://unpkg.com/three@0.117.1/examples/js/loaders/OBJLoader.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>
+  <script src="./script.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log(' Service Worker registered', reg))
+          .catch(err => console.error(' Service Worker registration failed', err));
+      });
+    }
+  </script>
+</body>
+</html>
